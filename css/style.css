@@ -328,9 +328,13 @@ template {
 
 /* Header ========================= */
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
-  padding: 24px 20px;
-  margin: 0 auto; }
+  padding: 24px 20px; }
 
 .menu {
   display: flex;
@@ -364,6 +368,7 @@ template {
 /* Hero ======================= */
 .hero {
   position: relative;
+  padding-top: 100px;
   background: #131313 url(../images/hero-bg.jpg) no-repeat center/cover;
   height: 100vh; }
   .hero__instagram {

@@ -328,8 +328,8 @@ template {
 
 /* Header ========================= */
 .header {
-  background-color: #313131;
-  padding: 24px 80px;
+  background-color: #131313;
+  padding: 24px 20px;
   margin: 0 auto; }
 
 .menu {
@@ -360,3 +360,29 @@ template {
 
 .contacts__phone {
   margin-right: 45px; }
+
+/* Hero ======================= */
+.hero {
+  position: relative;
+  background: #131313 url(../images/hero-bg.jpg) no-repeat center/cover;
+  height: 100vh; }
+  .hero__instagram {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 80px;
+    height: 100%; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313; }
+  .instagram__link {
+    text-transform: uppercase;
+    color: #e3b873;
+    text-decoration: none;
+    transform: rotate(90deg); }
+
+.title {
+  margin: 0; }

@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'FuturaBookC', sans-serif;
+  font-size: 14px; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -74,6 +81,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -316,15 +324,12 @@ template {
 
 .container {
   max-width: 1256px;
-  margin: auto; }
-
-* {
-  box-sizing: border-box; }
+  margin: 0 auto; }
 
 /* Header ========================= */
 .header {
   background-color: #313131;
-  padding: 24px 0;
+  padding: 24px 80px;
   margin: 0 auto; }
 
 .menu {
@@ -355,9 +360,3 @@ template {
 
 .contacts__phone {
   margin-right: 45px; }
-
-.body {
-  font-family: sans-serif;
-  font-size: 14px; }
-
-/*# sourceMappingURL=style.css.map */

@@ -321,9 +321,15 @@ template {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 300; }
+  .btn:hover {
+    cursor: pointer; }
   .btn--primary {
     background-color: #E3B873;
-    color: #fff; }
+    color: #fff;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    transition: box-shadow 0.2s linear; }
+    .btn--primary:hover {
+      box-shadow: none; }
   .btn--outline {
     border: 1px solid #fff;
     background-color: transparent;
@@ -381,8 +387,14 @@ template {
   flex-direction: column;
   justify-content: center;
   padding-top: 100px;
-  background: #131313 url(../images/hero-bg.jpg) no-repeat center/cover;
+  background: #131313 url(../images/hero/hero-bg.jpg) no-repeat center/cover;
   height: 100vh; }
+  .hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -402,7 +414,16 @@ template {
     min-width: 247px;
     min-height: 97px;
     background-color: #131313; }
+    .hero__scroll-down::after {
+      content: "";
+      background: url(../images/hero/arrow-down.svg) no-repeat center;
+      width: 30px;
+      height: 30px;
+      border: 1.5px solid #E3B873;
+      margin-left: 12px;
+      border-radius: 50%; }
   .hero__content {
+    position: relative;
     margin-right: 55px;
     max-width: 670px; }
   .hero__title {
@@ -425,10 +446,18 @@ template {
   align-items: center;
   background-color: #131313; }
   .instagram__link {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     color: #E3B873;
     text-decoration: none;
     transform: rotate(90deg); }
+    .instagram__link::after {
+      content: "";
+      width: 50px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 8px; }
 
 .title {
   margin: 0; }

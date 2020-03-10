@@ -306,12 +306,13 @@ template {
 
 .btn {
   font-family: 'FuturaDemiC', sans-serif;
-  padding: 13px 20px;
+  padding: 20px 35px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 0.93rem;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: center; }
   .btn:hover {
     cursor: pointer; }
   .btn--primary {
@@ -376,6 +377,8 @@ body {
   align-items: center; }
 
 .logo {
+  margin-left: 58px;
+  font-size: 1.075rem;
   font-family: 'FuturaDemiC', sans-serif;
   color: #E3B873;
   text-transform: uppercase;
@@ -385,7 +388,7 @@ body {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  margin-right: 2.85rem;
+  margin-right: 1.85rem;
   font-weight: 400;
   transition: color 0.2s linear; }
   .nav__item:last-child {
@@ -408,7 +411,7 @@ body {
   justify-content: center;
   padding-top: 100px;
   background: #131313 url(../images/hero/hero-bg.jpg) no-repeat center/cover;
-  height: 100vh; }
+  height: 145vh; }
   .hero::before {
     content: "";
     position: absolute;
@@ -433,8 +436,8 @@ body {
     color: #fff;
     left: 0;
     bottom: 0;
-    min-width: 247px;
-    min-height: 97px;
+    min-width: 17.6rem;
+    min-height: 6.92rem;
     background-color: #131313; }
     .hero__scroll-down::after {
       content: "";
@@ -446,18 +449,18 @@ body {
       border-radius: 50%; }
   .hero__content {
     position: relative;
-    margin-left: 4.28rem;
-    max-width: 47.85rem; }
+    margin-right: 26rem;
+    max-width: 47.85rem;
+    margin-bottom: 82px; }
   .hero__title {
     font-family: 'Yeseva One', sans-serif;
     font-size: 2.857rem;
     line-height: 53px;
     text-transform: uppercase; }
   .hero__text {
-    max-width: 504px;
+    max-width: 480px;
     font-size: 1.57rem;
-    line-height: 30px;
-    margin-bottom: 41px; }
+    line-height: 30px; }
 
 .title--primary {
   color: #E3B873; }

@@ -328,6 +328,18 @@ template {
     color: #fff;
     margin-left: 20px; }
 
+.label {
+  text-align: left;
+  font-size: 1.07rem;
+  line-height: 1.42rem; }
+  .label--light {
+    color: rgba(255, 255, 255, 0.5); }
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+
 .container {
   max-width: 1256px;
   margin: auto; }
@@ -369,7 +381,7 @@ img {
     .section-title__text {
       display: inline-block;
       color: #363636;
-      max-width: 781px;
+      max-width: 791px;
       font-size: 1.42rem;
       line-height: 1.92rem;
       text-align: center;
@@ -502,7 +514,7 @@ img {
   margin: 0; }
 
 /* Control ======================== */
-/* Types ======================== */
+/* Types ========================== */
 .types, .desing {
   color: #181818; }
 
@@ -550,7 +562,46 @@ img {
     bottom: -1.5rem; }
 
 /* Media ========================== */
-/* Desing ========================== */
+/* Desing ========================= */
+.modal {
+  position: fixed;
+  z-index: 99;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 36.14rem;
+  height: 36.35rem;
+  background-color: rgba(19, 19, 19, 0.6);
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+  .modal__dialog {
+    position: relative;
+    background: #131313;
+    padding: 2.57rem 3.5rem 1.92rem;
+    color: #fff; }
+  .modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url(../images/modal/close.svg) no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .modal__title {
+    font-family: 'Yeseva One', sans-serif;
+    text-align: center;
+    font-size: 1.35rem;
+    line-height: 1.85rem;
+    margin: 0 0 2.428rem 0; }
+  .modal__form {
+    display: flex;
+    flex-direction: column; }
+
+/* Modal ========================== */
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }

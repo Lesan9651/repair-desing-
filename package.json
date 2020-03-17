@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 {
   "name": "repair-desing",
   "version": "1.0.0",
-  "description": "",
+  "description": "You can use the [editor on GitHub](https://github.com/Lesan9651/repair-desing-/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
   "main": "index.js",
   "dependencies": {
     "jquery": "^3.4.1",
@@ -20,30 +19,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lesan9651/repair-desing-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lesan9651/repair-desing-/issues"
+  },
+  "homepage": "https://github.com/Lesan9651/repair-desing-#readme"
 }
-=======
-{
-  "name": "repair-desing",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "jquery": "^3.4.1",
-    "jslint": "^0.12.1",
-    "normalize.css": "^8.0.1",
-    "swiper": "^5.3.6"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-sass": "^4.0.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
-}
->>>>>>> c2263e18050414565100056d566a06da9625030c

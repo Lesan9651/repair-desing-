@@ -1,0 +1,60 @@
+.project
+   padding: 12.571rem 7.285rem 35rem
+   &-title
+      &__heading
+         font-family: 'Yeseva One', sans-serif
+         color: $primary
+         font-size: 1.928rem
+         line-height: 2.642rem
+         max-width: 18.071rem
+         display: flex
+         align-items: center
+         &::after
+            content: ""
+            position: absolute
+            width: 92px
+            border-bottom: 2px solid $primary
+            margin: 16.5px 0 0 12%
+   &__text
+      font-size: 1.285rem
+      line-height: 2.071rem
+      max-width: 31.571rem
+      margin-bottom: 42px
+.swiper
+   &-slide
+      display: flex
+      flex-wrap: wrap
+      &__text
+         flex-basis: 50%
+         margin-bottom: 3.928rem
+         p
+            font-size: 1.071rem
+            line-height: 1.72rem
+            max-width: 7.5rem
+            margin: 0
+      &__heading
+         font-family: 'Yeseva One', sans-serif
+         text-transform: uppercase
+         color: $primary
+         font-size: 1.285rem
+         line-height: 1.785rem
+         margin: 0
+         padding-bottom: 0.642rem
+   &-pagination
+      &-bullet
+         background: rgba(255, 255, 255, 0.3)
+      &-active
+         background-color: $light
+   &-button
+         &-next
+            background: url('../images/project/arrow-next.svg') no-repeat center
+            background-size: 42px
+            width: 42px
+            height: 14px
+            top: 100%
+         &-prev
+            background: url('../images/project/arrow-prev.svg')no-repeat center
+            background-size: 42px
+            width: 42px
+            height: 14px
+            top: 100%

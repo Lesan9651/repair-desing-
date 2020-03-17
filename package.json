@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "jquery": "^3.4.1",
+    "jslint": "^0.12.1",
+    "normalize.css": "^8.0.1",
+    "swiper": "^5.3.6"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

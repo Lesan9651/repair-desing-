@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -17,7 +18,7 @@
         <div class="container">
             <!-- menu -->
             <div class="menu">
-                <div class="logo menu__logo">Repair Design Project</div>
+                <div class="logo menu__logo wow fadeInLeft">Repair Design Project</div>
                 <nav class="nav menu__nav">
                     <a href="#" class="nav__item">Главная</a>
                     <!-- // -->
@@ -49,16 +50,16 @@
             </div>
             <div class="container">
                 <div class="hero__content">
-                    <h1 class="title hero__title">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
-                    <p class="hero__text">
+                    <h1 class="title hero__title wow fadeInRight" data-wow-delay="0.1s">Турецкий ремонт в&nbsp;<span class="title--primary">Ростове-на-дону</span></h1>
+                    <p class="hero__text wow fadeInRight" data-wow-delay="0.3 s">
                         Получите готовый ремонт под ключ в срок с экономией рабочего времени до 45 дней и 20% от стоимости материалов за счет организации работы
                     </p>
-                    <button class="btn hero__btn btn--primary" data-toggle="modal">Рассчитать стоимость</button>
+                    <button class="btn hero__btn btn--primary wow fadeInRight" data-wow-delay="0.5s" data-toggle="modal">Рассчитать стоимость</button>
                     <!-- // -->
-                    <button class="btn hero__btn btn--outline">Отправить заявку</button>
+                    <button class="btn hero__btn btn--outline wow fadeInRight" data-wow-delay="0.5s">Отправить заявку</button>
                 </div>
             </div>
-            <a href="#" class="hero__scroll-down">листайте вниз</a>
+            <a href="#" class="hero__scroll-down wow bounce" data-wow-iteration="1">листайте вниз</a>
         </section>
 
         <!-- Project -->
@@ -66,7 +67,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-50">
-                        <div class="project__title">
+                        <div class="project__title wow fadeInUp">
                             <h2 class="title project-title__heading">Завершенные проекты
                             </h2>
                             <p class="project__text">
@@ -76,7 +77,6 @@
 
                         <!-- Slider main container -->
                         <div class="swiper-container">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper swiper-no-swiping">
                                 <!-- Slides 1 -->
                                 <div class="swiper-slide">
@@ -118,9 +118,9 @@
         </section>
 
         <!-- Control -->
-        <section> class="section control">
+        <section class="section control">
             <div class="container">
-                <div class="section-title control__section-title">
+                <div class="section-title control__section-title wow fadeInUp">
                     <h2 class="section-title__heading">онлайн контроль</h2>
                     <div class="section-title__image">
                         <img src="images/control/video.svg" alt="surveillance camera">
@@ -158,7 +158,7 @@
         <!-- Types -->
         <section class="section types">
             <div class="container">
-                <div class="section-title">
+                <div class="section-title wow fadeInUp">
                     <h2 class="section-title__heading">Виды ремонта</h2>
                     <div class="section-title__image">
                         <img src="images/types/repair.svg" alt="repair">
@@ -229,7 +229,7 @@
         <!-- Desing -->
         <section class="section desing">
             <div class="container">
-                <div class="section-title">
+                <div class="section-title wow fadeInUp">
                     <h2 class="section-title__heading">Дизайн проект</h2>
                     <div class="section-title__image">
                         <img src="images/desing/desing.svg" alt="desing">
@@ -327,6 +327,7 @@
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js "></script>
 
 </body>

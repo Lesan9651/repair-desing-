@@ -55,4 +55,6 @@ $(document).ready(function() {
     next.css('left', prev.width() + 120);
     prev.css('right', next.width() + 120);
 
+    new WOW().init();
+
 });

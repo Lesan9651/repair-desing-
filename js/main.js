@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 $(document).ready(function() {
     var modal = $('.modal'),
         modalBtn = $('[data-toggle=modal]'),
-        closelBtn = $('.modal__close');
+        closeBtn = $('.modal__close');
 
     modalBtn.on('click', function() {
         modal.toggleClass('modal--visible');
@@ -56,5 +56,35 @@ $(document).ready(function() {
     prev.css('right', next.width() + 120);
 
     new WOW().init();
+
+    // Валидация формы
+    $('form').validate({
+        errorClass: "invalid",
+        rules: {
+            userName: {
+                required: true,
+                minlenght: 7
+            },
+            userPhone: "required",
+            userEmail: {
+                required: true,
+                email: true
+            }
+        },
+        messages: {
+            userName: {
+                required: "Имя обязательно",
+                minlenght: "Имя не короче семи букв"
+            },
+            userPhone: "Телефон обязателен",
+            userEmail: {
+                required: "Обязательно укажите email",
+                email: "Введите в формате: name@domain.com"
+            }
+        }
+    });
+
+    // маска для телефона
+    $('[type-tell]').mask('+7(000) 00-00-000', { placeholder: "=7 (__) __-__-___" });
 
 });

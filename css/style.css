@@ -338,7 +338,7 @@ template {
 .input {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
@@ -361,7 +361,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
   .policy__label::before {
     content: "";
     width: 18px;
@@ -370,6 +371,14 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
+
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
 
 .container {
   max-width: 1256px;
@@ -431,7 +440,7 @@ img {
       text-align: center;
       margin-bottom: 2.78rem; }
 
-/* Header ========================= */
+/* Header ========================== */
 .header {
   position: fixed;
   left: 0;
@@ -473,7 +482,7 @@ img {
 .contacts__phone {
   margin-right: 45px; }
 
-/* Hero =========================== */
+/* Hero ============================ */
 .hero {
   position: relative;
   display: flex;
@@ -567,7 +576,7 @@ img {
 .title {
   margin: 0; }
 
-/* Project ======================== */
+/* Project ========================= */
 .project {
   padding: 12.571rem 7.285rem 35rem; }
   .project-title__heading {
@@ -632,7 +641,7 @@ img {
   height: 14px;
   top: 100%; }
 
-/* Control ======================== */
+/* Control ========================= */
 .control__section-title {
   margin-bottom: 2.214rem;
   margin-top: -25rem; }
@@ -703,12 +712,13 @@ img {
   position: relative;
   margin: auto; }
 
-/* Types ========================== */
+/* Types =========================== */
 .types, .desing {
   color: #181818; }
 
 .card {
-  padding: 31px 0 141px 0; }
+  padding: 31px 0 141px 0;
+  margin-bottom: 19rem; }
   .card__text {
     position: relative;
     max-width: 23.57rem;
@@ -743,7 +753,73 @@ img {
     bottom: -1.5rem; }
 
 /* Desing ========================== */
-/* Desing ========================= */
+/* Footer ========================== */
+.footer {
+  background: #131313 url("../images/footer/footer-bg.jpg") center no-repeat;
+  padding-top: 3rem; }
+  .footer-wrap {
+    background-color: #181818;
+    max-width: 66.5rem;
+    margin: auto;
+    margin-top: -20rem;
+    padding: 3rem 12.928rem; }
+  .footer__title {
+    font-family: 'Yeseva One', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3.285rem; }
+  .footer__form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    width: 16.5rem; }
+    .footer__input::-webkit-input-placeholder {
+      color: #fff; }
+    .footer__input::-moz-placeholder {
+      color: #fff; }
+    .footer__input:-ms-input-placeholder {
+      color: #fff; }
+    .footer__input::-ms-input-placeholder {
+      color: #fff; }
+    .footer__input::placeholder {
+      color: #fff; }
+    .footer__input--border::-webkit-input-placeholder {
+      color: #fff; }
+    .footer__input--border::-moz-placeholder {
+      color: #fff; }
+    .footer__input--border:-ms-input-placeholder {
+      color: #fff; }
+    .footer__input--border::-ms-input-placeholder {
+      color: #fff; }
+    .footer__input--border::placeholder {
+      color: #fff; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.428rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-top: -1.7rem;
+    margin-bottom: 3.5rem; }
+  .footer__btn {
+    margin: auto;
+    padding: 1.5rem 5rem;
+    text-transform: uppercase; }
+  .footer__menu {
+    background-color: #131313;
+    margin-top: 3.714rem;
+    padding: 4.285rem 6.571rem; }
+
+/* Modal =========================== */
 .modal {
   opacity: 0;
   visibility: hidden;
@@ -758,7 +834,8 @@ img {
   background-color: rgba(19, 19, 19, 0.6);
   display: flex;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding: 1rem 0; }
   .modal--visible {
     opacity: 1;
     visibility: visible; }
@@ -789,16 +866,28 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input::-webkit-input-placeholder {
+    color: #fff; }
+  .modal__input::-moz-placeholder {
+    color: #fff; }
+  .modal__input:-ms-input-placeholder {
+    color: #fff; }
+  .modal__input::-ms-input-placeholder {
+    color: #fff; }
+  .modal__input::placeholder {
+    color: #fff; }
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
+    .modal__input-group:last-of-type {
       margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.78rem; }
   .modal__btn {
     align-self: flex-end; }
 
-/* Media ========================== */
+/* Media =========================== */
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }

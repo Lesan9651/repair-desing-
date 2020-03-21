@@ -818,6 +818,8 @@ img {
     background-color: #131313;
     margin-top: 3.714rem;
     padding: 4.285rem 6.571rem; }
+  .footer__map {
+    margin: 3.071em 13rem 0; }
 
 /* Modal =========================== */
 .modal {

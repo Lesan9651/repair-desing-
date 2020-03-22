@@ -81,10 +81,26 @@ $(document).ready(function() {
                 required: "Обязательно укажите email",
                 email: "Введите в формате: name@domain.com"
             }
+        },
+        submitHandler: function(from) {
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function(response) {
+                    consolo.log('Ajax сработал. Ответ сервера: ' + response);
+                    alert('Форма отправленна, мы свяжемся с Вами через 10 минут');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                },
+                error: function(response) {
+                    console.log('Ошибка запроса ' + response);
+                }
+            });
         }
     });
 
     // маска для телефона
-    $('[type-tell]').mask('+7(000) 00-00-000', { placeholder: "=7 (__) __-__-___" });
+    $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "+7 (___) __-__-___" });
 
 });

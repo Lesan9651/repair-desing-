@@ -58,7 +58,7 @@ $(document).ready(function() {
     new WOW().init();
 
     // Валидация формы
-    $('form').validate({
+    $('.modal__form').validate({
         errorClass: "invalid",
         rules: {
             userName: {

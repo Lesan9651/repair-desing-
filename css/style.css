@@ -716,43 +716,92 @@ img {
 .types, .desing {
   color: #181818; }
 
-.card {
-  padding: 31px 0 141px 0;
-  margin-bottom: 19rem; }
-  .card__text {
-    position: relative;
-    max-width: 23.57rem;
-    margin: 0 auto;
-    margin-top: -11.51rem;
-    padding: 25px 0 13px 31px;
-    background-color: #fff;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
-  .card__title {
-    color: #363636;
-    font-family: 'Yeseva One', sans-serif;
-    font-size: 1.28rem;
-    line-height: 1.78rem;
-    margin-top: 0; }
-  .card__list {
-    padding: 0 0 0 1.25rem;
-    margin: 0;
-    margin-bottom: 3rem; }
-  .card__item {
-    color: #959595;
-    font-size: 1.07rem;
-    line-height: 1.78rem; }
-  .card__pricetag {
-    position: absolute;
-    font-family: 'Yeseva One', sans-serif;
-    font-size: 1.28rem;
-    text-transform: uppercase;
-    background-color: #E3B873;
-    color: #fff;
-    padding: 1.214rem 2rem;
-    left: 0;
-    bottom: -1.5rem; }
+.card__items {
+  position: relative;
+  max-width: 23.57rem;
+  margin: 0 auto;
+  margin-top: -11.51rem;
+  padding: 25px 0 13px 31px;
+  background-color: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+
+.card__title {
+  color: #363636;
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 1.28rem;
+  line-height: 1.78rem;
+  margin-top: 0; }
+
+.card__list {
+  padding: 0 0 0 1.25rem;
+  margin: 0;
+  margin-bottom: 3rem; }
+
+.card__item {
+  color: #959595;
+  font-size: 1.07rem;
+  line-height: 1.78rem; }
+
+.card__pricetag {
+  position: absolute;
+  font-family: 'Yeseva One', sans-serif;
+  font-size: 1.28rem;
+  text-transform: uppercase;
+  background-color: #E3B873;
+  color: #fff;
+  padding: 1rem 2rem;
+  left: 0;
+  bottom: -1.5rem; }
+
+.card__text-thank {
+  font-size: 1.071rem;
+  line-height: 180%;
+  padding-bottom: 4.5rem; }
 
 /* Desing ========================== */
+/* Clients ========================== */
+.clients {
+  padding-bottom: 20rem;
+  color: #131313; }
+  .clients-title__text {
+    max-width: 25.714rem;
+    margin: 0 auto;
+    font-size: 1.42rem;
+    line-height: 1.928rem;
+    text-transform: none;
+    padding-bottom: 15rem; }
+  .clients__image {
+    display: block;
+    border-radius: 50%; }
+  .clients__title {
+    max-width: 14.071rem;
+    display: block;
+    margin-left: 7.642rem;
+    text-align: left;
+    margin-top: -60px;
+    padding-bottom: 1.2rem; }
+  .clients__items {
+    padding: 0; }
+  .clients__pricetag {
+    float: left;
+    padding: 0;
+    margin-right: 0.785rem; }
+    .clients__pricetag-image {
+      margin-right: 1.142rem; }
+    .clients__pricetag-text {
+      font-family: 'Yeseva One', sans-serif;
+      font-size: 1.214rem;
+      line-height: 1.714rem;
+      text-transform: uppercase;
+      float: right;
+      content: "|";
+      display: flex;
+      align-items: center;
+      height: 35px;
+      border-right: 2px solid #fff; }
+      .clients__pricetag-text::after {
+        content: ""; }
+
 /* Footer ========================== */
 .footer {
   background: #131313 url("../images/footer/footer-bg.jpg") center no-repeat;

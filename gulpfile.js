@@ -32,7 +32,7 @@ function serveSass() {
 
 function buildCSS(done) {
     src('css/**/**.css')
-        .pipe(cleanCSS({ compatibli: 'ie8' }))
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(dest('dist/css'));
     done();
 }
@@ -53,7 +53,7 @@ function buildJS(done) {
 function html(done) {
     src('**.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(dest('dist'));
+        .pipe(dest('dist/'));
     done();
 }
 

@@ -58,7 +58,7 @@ function html(done) {
 }
 
 function php(done) {
-    src(['**.php', 'phpmailer/**/**'])
+    src(['**.php'])
         .pipe(dest('dist'));
     src('phpmailer/**/**')
         .pipe(dest('dist/phpmailer/'));

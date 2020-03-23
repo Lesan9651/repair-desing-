@@ -73,7 +73,7 @@ function fonts(done) {
 
 function imagemin(done) {
     src('img/**/**')
-        .pipe(tinypng({ key: 'API_KEY' }))
+        .pipe(tinypng({ key: 'API_KEY', }))
         .pipe(dest('dist/img/'))
     src('img/**/*.svg')
         .pipe(dest('dist/img/'))

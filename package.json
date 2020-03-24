@@ -4,6 +4,7 @@
   "description": "You can use the [editor on GitHub](https://github.com/Lesan9651/repair-desing-/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
   "main": "index.js",
   "dependencies": {
+    "fancybox": "^3.0.1",
     "jquery": "^3.4.1",
     "jquery-mask-plugin": "^1.14.16",
     "jquery-validation": "^1.19.1",

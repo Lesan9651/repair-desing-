@@ -102,5 +102,21 @@ $(document).ready(function() {
 
     // маска для телефона
     $('[type=tel]').mask('+7(000) 00-00-000', { placeholder: "+7 (___) __-__-___" });
+    /*
+                var player;
+                $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+                    player = new YT.Player('player', {
+                        height: '465',
+                        width: '100%',
+                        videoId: 'RHzzLqJWqHs',
+                        events: {
+                            'onReady': videoPlay,
+                        }
+                    });
+                })
 
+                function videoPlay(event) {
+                    event.target.playVideo();
+                }
+*/
 });

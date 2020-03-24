@@ -578,7 +578,8 @@ img {
 
 /* Project ========================= */
 .project {
-  padding: 12.571rem 7.285rem 35rem; }
+  padding: 12.571rem 7.285rem 35rem;
+  margin-bottom: -15rem; }
   .project-title__heading {
     font-family: 'Yeseva One', sans-serif;
     color: #E3B873;
@@ -710,7 +711,8 @@ img {
 
 .video__play {
   position: relative;
-  margin: auto; }
+  margin: auto;
+  cursor: pointer; }
 
 /* Types =========================== */
 .types, .desing {
@@ -799,8 +801,6 @@ img {
       align-items: center;
       height: 35px;
       border-right: 2px solid #fff; }
-      .clients__pricetag-text::after {
-        content: ""; }
 
 /* Footer ========================== */
 .footer {

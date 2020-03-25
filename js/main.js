@@ -95,6 +95,8 @@ $(document).ready(function() {
                 },
                 error: function(response) {
                     console.log('Ошибка запроса ' + response);
+                    ym('93033142', 'reachGoal', 'button');
+                    return true;
                 }
             });
         }
